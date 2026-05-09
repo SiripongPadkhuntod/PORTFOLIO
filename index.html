@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | My Work</title>
+    <meta name="description" content="Professional portfolio showcasing my latest projects and skills.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav>
+        <div class="logo">PORTFOLIO.</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#background">Background</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions" style="display: flex; align-items: center; gap: 1rem;">
+            <button id="theme-toggle" class="btn" style="background:transparent; color:var(--text-main); font-size: 1.2rem;">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button id="lang-toggle" class="btn" style="background:transparent; color:var(--text-dim)">EN / TH</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="hero-tag">Welcome to my space</span>
+                <h1 class="hero-title">Hello, I'm a <br><span class="typing">Developer</span></h1>
+                <p class="hero-desc">I build high-performance web applications and digital experiences with modern technologies. Let's build something amazing together.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#" class="btn" style="background: rgba(255,255,255,0.05); color: var(--text-main); border: 1px solid var(--glass-border); margin-left:1rem;"><i class="fas fa-download" style="margin-right: 0.5rem;"></i> Download CV</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/SiripongPadkhuntod" target="_blank" rel="noopener" aria-label="GitHub" class="social-ic"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/stxp._.srp" target="_blank" rel="noopener" aria-label="Instagram" class="social-ic"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:stopsiripong@gmail.com" aria-label="Email" class="social-ic"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/siripong.phadkhuntod" target="_blank" rel="noopener" aria-label="Facebook" class="social-ic"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/WhoImiItsAboutWhoAsk777" target="_blank" rel="noopener" aria-label="Telegram" class="social-ic"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="assets/profile.png" alt="Profile" class="hero-image">
+                <!-- Orbiting Icons -->
+                <div class="orbit-item" style="animation-delay: -0s;"><i class="fab fa-react"></i></div>
+                <div class="orbit-item" style="animation-delay: -3s;"><i class="fab fa-js"></i></div>
+                <div class="orbit-item" style="animation-delay: -6s;"><i class="fab fa-node-js"></i></div>
+                <div class="orbit-item" style="animation-delay: -9s;"><i class="fab fa-python"></i></div>
+                <div class="orbit-item" style="animation-delay: -12s;"><i class="fab fa-figma"></i></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="reveal">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="glass-card" style="max-width: 850px; margin: 0 auto; text-align: left;">
+                <p style="font-size: 1.1rem; color: var(--text-dim); line-height: 1.8;">
+                    Backend-focused <strong>Software Engineer</strong> experienced in building scalable services with <strong>Go</strong> and modern architectures (Hexagonal / Ports & Adapters). Strong in API design, database modeling, and system design, with exposure to enterprise systems and cloud integrations.
+                    <br><br>
+                    Able to bridge business and technical perspectives, with a focus on delivering reliable, production-ready backend systems and continuously improving in cloud, authentication, and performance.
+                </p>
+            </div>
+        </section>
+
+        <!-- My Background Section -->
+        <section id="background" class="reveal">
+            <h2 class="section-title">My Background</h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Work Experience 2 (Sirisoft) -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Dec 2025 - Present</span>
+                        <h3 class="timeline-title">Software Developer</h3>
+                        <div class="timeline-org"><i class="fas fa-building"></i> Sirisoft Public Company Limited (Full-time)</div>
+                        <p class="timeline-desc">Working on high-performance backend systems and API development using Go and Oracle Database.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">API Development</span>
+                            <span class="tag">Swagger API</span>
+                            <span class="tag">Oracle Database</span>
+                            <span class="tag">Jira</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience 1 (Teibto) -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2024 - 2025</span>
+                        <h3 class="timeline-title">Software Developer</h3>
+                        <div class="timeline-org"><i class="fas fa-building"></i> Teibto Co., Ltd.</div>
+                        <ul class="timeline-desc" style="list-style-type: disc; padding-left: 1.2rem; color: var(--text-dim); font-size: 0.95rem;">
+                            <li>Developed and customized scripts and functions to meet specific project requirements within Oracle NetSuite, ensuring optimal system performance.</li>
+                            <li>Managed and enhanced NetSuite solutions through SuiteScript development, workflow automation, and system API integration.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Oracle NetSuite</span>
+                            <span class="tag">SuiteScript</span>
+                            <span class="tag">ERP Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship (Teibto) -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date"> May 2024 - Dec 2024 </span>
+                        <h3 class="timeline-title">Internship (Software Developer)</h3>
+                        <div class="timeline-org"><i class="fas fa-building"></i> Teibto Co., Ltd.</div>
+                        <p class="timeline-desc">Successfully completed a 6-month Cooperative Education Program, gaining hands-on experience in ERP development and NetSuite customization.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Co-op Program</span>
+                            <span class="tag">NetSuite</span>
+                            <span class="tag">ERP Basics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2021 - 2024</span>
+                        <h3 class="timeline-title">Bachelor of Science (Computer Science)</h3>
+                        <div class="timeline-org"><i class="fas fa-university"></i> Rangsit University</div>
+                        <p class="timeline-desc">Graduated with First Class Honors.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">First Class Honors</span>
+                            <span class="tag">GPAX: 3.72</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vocational College -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2018 - 2021</span>
+                        <h3 class="timeline-title">Vocational Certificate (Business Computer)</h3>
+                        <div class="timeline-org"><i class="fas fa-building-columns"></i> Siam Business Administration Technological College</div>
+                        <div class="timeline-tags">
+                            <span class="tag">Business Computer</span>
+                            <span class="tag">GPAX: 3.73</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Work With (Detailed Skills) -->
+        <section id="skills" class="reveal">
+            <h2 class="section-title">What I work with</h2>
+            
+            <!-- Backend -->
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-server"></i>
+                    <span>Backend Development</span>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-golang"></i></div>
+                        <span class="skill-name">Go</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-java"></i></div>
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-python"></i></div>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-node-js"></i></div>
+                        <span class="skill-name">Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fas fa-terminal"></i></div>
+                        <span class="skill-name">C++</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend & UI/UX -->
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <span>Frontend & UI/UX</span>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-js"></i></div>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-react"></i></div>
+                        <span class="skill-name">React.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-html5"></i></div>
+                        <span class="skill-name">HTML / CSS</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-figma"></i></div>
+                        <span class="skill-name">Figma</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database & ERP -->
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-database"></i>
+                    <span>Database & ERP</span>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fas fa-table"></i></div>
+                        <span class="skill-name">SQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fas fa-database"></i></div>
+                        <span class="skill-name">Oracle DB</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fas fa-sync"></i></div>
+                        <span class="skill-name">NetSuite ERP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blockchain & Mobile -->
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Blockchain & Mobile</span>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fab fa-ethereum"></i></div>
+                        <span class="skill-name">Solidity</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon-box"><i class="fas fa-mobile"></i></div>
+                        <span class="skill-name">Dart (Flutter)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="reveal">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="card-grid">
+                <!-- Project 1: AutoTrade -->
+                <div class="glass-card project-card">
+                    <div class="project-img" style="background: url('assets/project_autotrade.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        <h3>AutoTrade Management System</h3>
+                        <p>A comprehensive used car trading system covering purchasing, sales, payments, and automated reporting.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Smart Car -->
+                <div class="glass-card project-card">
+                    <div class="project-img" style="background: url('assets/project_smartcar.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Arduino</span>
+                            <span class="tag">C++</span>
+                        </div>
+                        <h3>Smart Car Model</h3>
+                        <p>Mobile-controlled 4WD car with sensor-based collision prevention to detect and avoid obstacles.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Workspace Booking -->
+                <div class="glass-card project-card">
+                    <div class="project-img" style="background: url('assets/project2.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">ReactJS</span>
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <h3>Workspace Booking System</h3>
+                        <p>Platform for booking desks and meeting rooms with real-time checks and email confirmations.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Flappy Bird Blockchain -->
+                <div class="glass-card project-card">
+                    <div class="project-img" style="background: url('assets/project_flappy.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Solidity</span>
+                            <span class="tag">ReactJS</span>
+                            <span class="tag">Web3</span>
+                        </div>
+                        <h3>Flappy Bird Blockchain</h3>
+                        <p>Blockchain-based game with P2E mechanics, tokens, and NFT skins powered by smart contracts.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: Office Tracking -->
+                <div class="glass-card project-card">
+                    <div class="project-img" style="background: url('assets/project1.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">ReactJS</span>
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        <h3>Equipment Tracking System</h3>
+                        <p>Web-based tracking system for office equipment with record management and role-based access control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="glass-card" style="max-width: 600px; margin: 0 auto;">
+                <form id="contact-form">
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <input type="text" placeholder="Your Name" style="padding: 1rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white;">
+                        <input type="email" placeholder="Your Email" style="padding: 1rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white;">
+                        <textarea placeholder="Your Message" rows="5" style="padding: 1rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; resize: none;"></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 4rem 10%; border-top: 1px solid var(--glass-border); color: var(--text-dim);">
+        <div style="margin-bottom: 1.5rem; font-size: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
+            <a href="#" style="color: var(--text-dim); transition: var(--transition-smooth);"><i class="fab fa-github"></i></a>
+            <a href="#" style="color: var(--text-dim); transition: var(--transition-smooth);"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="color: var(--text-dim); transition: var(--transition-smooth);"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
