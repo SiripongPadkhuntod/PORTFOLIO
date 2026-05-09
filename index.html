@@ -277,7 +277,12 @@
             <h2 class="section-title">Selected Projects</h2>
             <div class="card-grid">
                 <!-- Project 1: AutoTrade -->
-                <div class="glass-card project-card">
+                <div class="glass-card project-card" data-project="autotrade"
+                     data-title="AutoTrade Management System"
+                     data-img="assets/project_autotrade.png"
+                     data-tags="Java,SQL"
+                     data-desc="Developed a used car trading system covering comprehensive functionalities: purchasing, sales, payment processing, customer history tracking, and automated reporting."
+                     data-features="Purchase & sales management,Payment processing & invoicing,Customer history tracking,Automated report generation,Inventory management">
                     <div class="project-img" style="background: url('assets/project_autotrade.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-info">
                         <div class="project-tags">
@@ -290,7 +295,12 @@
                 </div>
 
                 <!-- Project 2: Smart Car -->
-                <div class="glass-card project-card">
+                <div class="glass-card project-card" data-project="smartcar"
+                     data-title="Smart Car Model"
+                     data-img="assets/project_smartcar.png"
+                     data-tags="IoT,Arduino,C++"
+                     data-desc="Designed a mobile-controlled 4WD smart car model utilizing sensor-based collision prevention to detect and avoid obstacles."
+                     data-features="Mobile app remote control,Ultrasonic sensor collision detection,4WD motor control,Real-time obstacle avoidance,Bluetooth connectivity">
                     <div class="project-img" style="background: url('assets/project_smartcar.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-info">
                         <div class="project-tags">
@@ -304,7 +314,12 @@
                 </div>
 
                 <!-- Project 3: Workspace Booking -->
-                <div class="glass-card project-card">
+                <div class="glass-card project-card" data-project="workspace"
+                     data-title="Workspace Booking System"
+                     data-img="assets/project2.png"
+                     data-tags="ReactJS,Tailwind CSS,NodeJS,SQL"
+                     data-desc="Created a platform for booking/canceling desks and meeting rooms, featuring real-time availability checks and automated email confirmations."
+                     data-features="Desk & meeting room booking,Real-time availability checks,Automated email confirmations,Booking cancellation,Admin dashboard">
                     <div class="project-img" style="background: url('assets/project2.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-info">
                         <div class="project-tags">
@@ -318,7 +333,12 @@
                 </div>
 
                 <!-- Project 4: Flappy Bird Blockchain -->
-                <div class="glass-card project-card">
+                <div class="glass-card project-card" data-project="flappy"
+                     data-title="Flappy Bird Game Blockchain"
+                     data-img="assets/project_flappy.png"
+                     data-tags="Solidity,HTML,CSS,JavaScript,ReactJS"
+                     data-desc="Developed a blockchain-based Flappy Bird game allowing players to earn tokens to purchase NFTs/in-game skins, powered by Solidity smart contracts for secure transactions."
+                     data-features="Play-to-Earn mechanics,Token reward system,NFT / in-game skin marketplace,Solidity smart contracts,MetaMask wallet integration">
                     <div class="project-img" style="background: url('assets/project_flappy.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-info">
                         <div class="project-tags">
@@ -332,7 +352,12 @@
                 </div>
 
                 <!-- Project 5: Office Tracking -->
-                <div class="glass-card project-card">
+                <div class="glass-card project-card" data-project="tracking"
+                     data-title="Office Equipment Tracking System"
+                     data-img="assets/project1.png"
+                     data-tags="ReactJS,Tailwind CSS,NodeJS,SQL"
+                     data-desc="Developed a web-based system with key features: equipment record management, advanced search filters, and user authentication with role-based access control."
+                     data-features="Equipment record management,Advanced search & filters,Role-based access control,User authentication,Responsive dashboard">
                     <div class="project-img" style="background: url('assets/project1.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-info">
                         <div class="project-tags">
@@ -346,6 +371,23 @@
                 </div>
             </div>
         </section>
+
+        <!-- Project Modal -->
+        <div id="project-modal" class="modal-overlay">
+            <div class="modal-content glass-card">
+                <button class="modal-close" id="modal-close">&times;</button>
+                <div class="modal-img" id="modal-img"></div>
+                <div class="modal-body">
+                    <div class="project-tags" id="modal-tags"></div>
+                    <h2 id="modal-title"></h2>
+                    <p class="modal-desc" id="modal-desc"></p>
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 0.8rem; color: var(--primary);">
+                        <i class="fas fa-check-circle" style="margin-right: 0.5rem;"></i>Key Features
+                    </h4>
+                    <ul class="modal-features" id="modal-features"></ul>
+                </div>
+            </div>
+        </div>
 
         <!-- Contact Section -->
         <section id="contact" class="reveal">

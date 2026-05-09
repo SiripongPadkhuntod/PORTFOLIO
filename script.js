@@ -86,6 +86,52 @@ if (contactForm) {
     });
 }
 
+// Project Modal
+const modal = document.getElementById('project-modal');
+const modalClose = document.getElementById('modal-close');
+const modalImg = document.getElementById('modal-img');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalTags = document.getElementById('modal-tags');
+const modalFeatures = document.getElementById('modal-features');
+
+document.querySelectorAll('.project-card[data-project]').forEach(card => {
+    card.addEventListener('click', () => {
+        // Populate modal
+        modalImg.style.backgroundImage = `url('${card.dataset.img}')`;
+        modalTitle.textContent = card.dataset.title;
+        modalDesc.textContent = card.dataset.desc;
+
+        // Tags
+        modalTags.innerHTML = card.dataset.tags.split(',')
+            .map(t => `<span class="tag">${t.trim()}</span>`)
+            .join('');
+
+        // Features
+        modalFeatures.innerHTML = card.dataset.features.split(',')
+            .map(f => `<li>${f.trim()}</li>`)
+            .join('');
+
+        // Show modal
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+// Close modal
+function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+});
+
 // Theme Toggle
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = themeToggle.querySelector('i');
